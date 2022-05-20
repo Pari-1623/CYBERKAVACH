@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main</title>
+        
+  <style>/* Add a black background color to the top navigation */
+    .topnav {
+        background-color:powderblue;
+        overflow: hidden;
+    }
+          
+          /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color:skyblue;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      color: black;
+    }
+          
+          /* Change the color of links on hover */
+    .topnav a:hover {
+        background-color: turquoise;
+        color: black;
+    }
+          
+    /* Add a color to the active/current link */
+    .topnav a.active {
+      background-color: cyan;
+      color: black;
+    }
+
+  * {
+  box-sizing: border-box;
+}
+/* Images(Thumbnails) */
+.container {
+  position: relative;
+  width: 50%;
+  float:left;
+}
+
+.image {
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: aqua;
+  overflow: hidden;
+  width: 50%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+          
+</style>
+    </head>
+    <body bgcolor="lightgreen">
+        
+        <div class="topnav">
+          <a class="active" href="./main.html"><i class="fa-solid fa-user-shield"></i>CyberKavach</a>
+           <a href="#home"><i class="fa-solid fa-shield-heart"></i> Home</a>
+            <a href="./learnmore.html"><i class="fa-solid fa-hands-holding-child"></i>Learn More</a>
+            <a href="./institutions.html"><i class="fa-solid fa-building-columns"></i> Insitutions</a>
+            <a href="./FAQ.html"><i class="fa-solid fa-comments"></i>FAQ</a>
+            <a href="./Help.html"><i class="fa-solid fa-triangle-exclamation"></i>Need help</a>
+            <a href="./aboutUS.html"><i class="fa-regular fa-address-book"></i> About Us</a>
+            
+            
+        </div> 
+        <!-- Avatars(Thumbnails) -->
+        <div class="row">
+          
+        <div class="container">
+          <img src="game.jpg" alt="Toxic_Games" class="image">
+          <div class="overlay">
+            <div class="text">Toxic-games</div>
+          </div>
+          </div>
+          
+          <div class="container">
+          <img src="privacy.jpg" alt = "Online Privacy" class="image">
+          <div class="overlay">
+            <div class="text">Online-privacy</div>
+          </div>
+          </div>
+
+          <div class="container">
+          <img src="kids.jpg" alt = "Cyber Security" class="image">
+          <div class="overlay">
+              <div class="text">Cyber Security</div>
+          </div>
+          </div>
+
+          <div class="container">
+          <img src="sec.jpg" alt = "Security" class="image">
+          <div class="overlay">
+              <div class="text">Security</div>
+          </div>
+          </div>
+
+          <div class="container">
+          <img src="teach.jpg" alt = "Online Privacy" class="image">
+          <div class="overlay">
+              <div class="text">Awareness</div>
+          </div>
+          </div>
+
+        </div>        
+
+        <script src="https://kit.fontawesome.com/5159882bfc.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>
